@@ -10,7 +10,14 @@
   }
 
   const result = JSON.parse(stored);
-  const { levels, ranked, finalType, modeKicker, badge, sub, special } = result;
+  let { levels, ranked, finalType, modeKicker, badge, sub, special } = result;
+  // Ensure finalType text fields reflect current page language by
+  // re-resolving type data from SBTI_TYPES using the type code.
+  if (finalType && finalType.code && typeof SBTI_TYPES !== 'undefined' && SBTI_TYPES[finalType.code]) {
+    // merge stored metadata (distance, exact, similarity) with current-language type data
+    const storedMeta = { distance: finalType.distance, exact: finalType.exact, similarity: finalType.similarity };
+    finalType = { ...SBTI_TYPES[finalType.code], ...storedMeta };
+  }
   const dimensionMeta = SBTI_DIM.dimensionMeta;
   const dimensionOrder = SBTI_DIM.dimensionOrder;
   const dimExplanations = SBTI_DIM.dimExplanations;

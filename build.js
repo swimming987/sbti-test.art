@@ -130,26 +130,28 @@ function safeJSON(obj) {
 }
 
 // ── load data ────────────────────────────────────────────
-const types = readJSON(path.join(DATA, 'types.json'));
-const dimensions = readJSON(path.join(DATA, 'dimensions.json'));
+const typesI18n = readJSON(path.join(DATA, 'types-i18n.json'));
+const dimensionsI18n = readJSON(path.join(DATA, 'dimensions-i18n.json'));
 const questionsI18n = readJSON(path.join(DATA, 'questions-i18n.json'));
+
+// Extract text for specific language
+function extractText(obj, langCode) {
+  if (typeof obj === 'string') return obj;
+  if (obj && typeof obj === 'object' && obj[langCode]) return obj[langCode];
+  if (obj && typeof obj === 'object' && obj['zh-CN']) return obj['zh-CN']; // fallback
+  return obj;
+}
 
 // Extract questions for a specific language
 function getQuestionsForLang(langCode) {
-  const extractText = (obj) => {
-    if (typeof obj === 'string') return obj;
-    if (obj && typeof obj === 'object' && obj[langCode]) return obj[langCode];
-    return obj;
-  };
-
   const translateItem = (item) => {
     const result = { ...item };
-    if (item.text) result.text = extractText(item.text);
-    if (item.label) result.label = extractText(item.label);
+    if (item.text) result.text = extractText(item.text, langCode);
+    if (item.label) result.label = extractText(item.label, langCode);
     if (item.options) {
       result.options = item.options.map(opt => ({
         ...opt,
-        label: extractText(opt.label)
+        label: extractText(opt.label, langCode)
       }));
     }
     return result;
@@ -161,9 +163,61 @@ function getQuestionsForLang(langCode) {
   };
 }
 
+// Extract types for a specific language
+function getTypesForLang(langCode) {
+  const types = {
+    types: {},
+    images: typesI18n.images,
+    normalTypes: typesI18n.normalTypes,
+    patternMatches: typesI18n.patternMatches,
+    drunkActivation: typesI18n.drunkActivation,
+    hhhhFallback: typesI18n.hhhhFallback
+  };
+
+  for (const [code, typeData] of Object.entries(typesI18n.types)) {
+    types.types[code] = {
+      code: typeData.code,
+      cn: extractText(typeData.cn, langCode),
+      intro: extractText(typeData.intro, langCode),
+      desc: extractText(typeData.desc, langCode)
+    };
+    if (typeData.pattern) {
+      types.types[code].pattern = typeData.pattern;
+    }
+  }
+
+  return types;
+}
+
+// Extract dimensions for a specific language
+function getDimensionsForLang(langCode) {
+  const dimensions = {
+    dimensionMeta: {},
+    dimensionOrder: dimensionsI18n.dimensionOrder,
+    dimExplanations: {}
+  };
+
+  for (const [dim, data] of Object.entries(dimensionsI18n.dimensionMeta)) {
+    dimensions.dimensionMeta[dim] = {
+      name: extractText(data.name, langCode),
+      model: extractText(data.model, langCode)
+    };
+  }
+
+  for (const [dim, levels] of Object.entries(dimensionsI18n.dimExplanations)) {
+    dimensions.dimExplanations[dim] = {};
+    for (const [level, text] of Object.entries(levels)) {
+      dimensions.dimExplanations[dim][level] = extractText(text, langCode);
+    }
+  }
+
+  return dimensions;
+}
+
 const LANGS = [
   { code: 'zh-CN', dir: '', file: 'zh-CN.json' },
-  { code: 'zh-TW', dir: 'zh-TW', file: 'zh-TW.json' }
+  { code: 'zh-TW', dir: 'zh-TW', file: 'zh-TW.json' },
+  { code: 'en', dir: 'en', file: 'en.json' }
 ];
 
 const i18n = {};
@@ -185,8 +239,19 @@ function copyDir(src, dest) {
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
-    if (entry.isDirectory()) copyDir(srcPath, destPath);
-    else fs.copyFileSync(srcPath, destPath);
+    try {
+      if (entry.isDirectory()) {
+        copyDir(srcPath, destPath);
+      } else {
+        fs.copyFileSync(srcPath, destPath);
+      }
+    } catch (err) {
+      if (err.code === 'EPERM') {
+        console.warn(`  ⚠ Skipped ${path.relative(ROOT, srcPath)} (file in use)`);
+      } else {
+        throw err;
+      }
+    }
   }
 }
 
@@ -196,8 +261,10 @@ function buildLang(lang) {
   const prefix = lang.dir ? `/${lang.dir}` : '';
   const distDir = lang.dir ? path.join(DIST, lang.dir) : DIST;
 
-  // Get questions for current language
+  // Get language-specific data
   const questions = getQuestionsForLang(lang.code);
+  const types = getTypesForLang(lang.code);
+  const dimensions = getDimensionsForLang(lang.code);
 
   // Common template data
   const common = {
@@ -232,6 +299,53 @@ function buildLang(lang) {
     imagesJSON: safeJSON(types.images),
     normalTypesJSON: safeJSON(types.normalTypes),
     dimensionsJSON: safeJSON(dimensions),
+    testI18nJSON: safeJSON({
+      question: t.test.question,
+      dimHidden: t.test.dimHidden,
+      supplementary: t.test.supplementary,
+      hintIncomplete: t.test.hintIncomplete,
+      hintComplete: t.test.hintComplete,
+      submit: t.test.submit,
+      backHome: t.test.backHome
+    }),
+    resultI18nJSON: safeJSON({
+      yourType: t.result.yourType,
+      hiddenActivated: t.result.hiddenActivated,
+      systemFallback: t.result.systemFallback,
+      noteNormal: t.result.noteNormal,
+      noteSpecial: t.result.noteSpecial,
+      matchHigh: t.result.matchHigh,
+      matchDrunk: t.result.matchDrunk,
+      matchLow: t.result.matchLow,
+      matchPercent: t.result.matchPercent,
+      matchDrunkBadge: t.result.matchDrunkBadge,
+      matchLowBadge: t.result.matchLowBadge,
+      shareCopied: t.result.shareCopied,
+      expand: t.result.expand,
+      collapse: t.result.collapse,
+      analysisTitle: t.result.analysisTitle,
+      dimTitle: t.result.dimTitle,
+      noteTitle: t.result.noteTitle,
+      authorTitle: t.result.authorTitle,
+      authorP1: t.result.authorP1,
+      authorP2: t.result.authorP2,
+      authorP3: t.result.authorP3,
+      authorP4: t.result.authorP4,
+      restart: t.result.restart,
+      backHome: t.result.backHome,
+      shareLink: t.result.shareLink,
+      share: t.result.share,
+      yourType: t.result.yourType,
+      hiddenActivated: t.result.hiddenActivated,
+      systemFallback: t.result.systemFallback,
+      matchHigh: t.result.matchHigh,
+      matchDrunk: t.result.matchDrunk,
+      matchLow: t.result.matchLow,
+      matchPercent: t.result.matchPercent,
+      matchDrunkBadge: t.result.matchDrunkBadge,
+      matchLowBadge: t.result.matchLowBadge,
+      shareCopied: t.result.shareCopied
+    })
   };
 
   // 1. Index page
@@ -305,8 +419,9 @@ function buildLang(lang) {
 // ── generate sitemap.xml ─────────────────────────────────
 function buildSitemap() {
   const pages = ['', '/test', '/types', '/about', '/faq', '/privacy-policy', '/terms-of-service', '/cookie-policy'];
-  // Add type detail pages
-  for (const tp of Object.values(types.types)) {
+  // Add type detail pages (use zh-CN for type codes)
+  const typesZhCN = getTypesForLang('zh-CN');
+  for (const tp of Object.values(typesZhCN.types)) {
     pages.push(`/types/${slugify(tp.code)}`);
   }
 
@@ -350,8 +465,14 @@ function buildRobots() {
 // ── main ─────────────────────────────────────────────────
 console.log('Building SBTI Test site...\n');
 
-// Clean dist
-if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true, maxRetries: 3, retryDelay: 100 });
+// Clean dist (with better error handling)
+if (fs.existsSync(DIST)) {
+  try {
+    fs.rmSync(DIST, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+  } catch (err) {
+    console.warn('Warning: Could not clean dist folder (files may be in use). Will overwrite existing files.');
+  }
+}
 mkdirp(DIST);
 
 // Copy static assets
@@ -359,8 +480,18 @@ copyDir(path.join(ROOT, 'image'), path.join(DIST, 'image'));
 if (fs.existsSync(path.join(ROOT, 'css'))) copyDir(path.join(ROOT, 'css'), path.join(DIST, 'css'));
 if (fs.existsSync(path.join(ROOT, 'js'))) copyDir(path.join(ROOT, 'js'), path.join(DIST, 'js'));
 // Copy logo and favicon
-if (fs.existsSync(path.join(ROOT, 'logo.png'))) fs.copyFileSync(path.join(ROOT, 'logo.png'), path.join(DIST, 'logo.png'));
-if (fs.existsSync(path.join(ROOT, 'favicon.ico'))) fs.copyFileSync(path.join(ROOT, 'favicon.ico'), path.join(DIST, 'favicon.ico'));
+try {
+  if (fs.existsSync(path.join(ROOT, 'logo.png'))) fs.copyFileSync(path.join(ROOT, 'logo.png'), path.join(DIST, 'logo.png'));
+} catch (err) {
+  if (err.code !== 'EPERM') throw err;
+  console.warn('  ⚠ Skipped logo.png (file in use)');
+}
+try {
+  if (fs.existsSync(path.join(ROOT, 'favicon.ico'))) fs.copyFileSync(path.join(ROOT, 'favicon.ico'), path.join(DIST, 'favicon.ico'));
+} catch (err) {
+  if (err.code !== 'EPERM') throw err;
+  console.warn('  ⚠ Skipped favicon.ico (file in use)');
+}
 console.log('  ✓ Static assets copied\n');
 
 // Build all languages

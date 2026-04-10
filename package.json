@@ -8,5 +8,9 @@
     "dev": "node build.js && npx serve dist",
     "cf:deploy": "node build.js && npx wrangler pages deploy dist --project-name=sbti-test-art"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@vitalets/google-translate-api": "^9.2.1",
+    "opencc-js": "^1.0.5"
+  }
 }

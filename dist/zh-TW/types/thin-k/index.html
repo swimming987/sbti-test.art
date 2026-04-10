@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>THIN-K（思考者）- SBTI Test</title>
-  <meta name="description" content="经研究发现，THIN-K人格的大脑构造与常人有根本性不同。正如名称所示，您的大脑长时间处于思考状态。您十分会审判信息，注重论点、论据、逻辑推理、潜在偏见，乃至“作者本人三代以内思想背景调查报告”的全套材料。在这个信息爆炸的时代，您绝不会轻易盲从，会在关系中衡量利弊，也十分捍卫自己的自我空间。当别人看到您独处时在发呆？愚蠢，那不是发呆，那是您的大脑正在对今天接收到的所有信息进行分类、归档和销毁。">
+  <meta name="description" content="經研究發現，THIN-K人格的大腦構造與常人有根本性不同。正如名稱所示，您的大腦長時間處於思考狀態。您十分會審判信息，注重論點、論據、邏輯推理、潛在偏見，乃至“作者本人三代以內思想背景調查報告”的全套材料。在這個信息爆炸的時代，您絕不會輕易盲從，會在關係中衡量利弊，也十分捍衛自己的自我空間。當別人看到您獨處時在發呆？愚蠢，那不是發呆，那是您的大腦正在對今天接收到的所有信息進行分類、歸檔和銷燬。">
   <meta name="keywords" content="sbti test, THIN-K, 思考者, sbti personality, sbti type">
   <link rel="canonical" href="https://sbti-test.art/zh-TW/types/thin-k">
   <link rel="alternate" hreflang="zh-Hans" href="https://sbti-test.art/types/thin-k">
@@ -32,7 +32,22 @@
       <img src="/logo.png" alt="SBTI Test" class="logo-img">
       <span class="logo-text">SBTI <span>Test</span></span>
     </a>
-    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    <div class="header-actions">
+      <!-- 移动端独立语言切换 -->
+      <div class="lang-switcher lang-switcher-mobile">
+        <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐</button>
+        <div class="lang-dropdown">
+          
+          <a href="" class="" onclick="switchLang('',event)">简体中文</a>
+          
+          <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+          
+          <a href="en" class="" onclick="switchLang('en',event)">English</a>
+          
+        </div>
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="/zh-TW/">首頁</a></li>
@@ -40,13 +55,15 @@
         <li><a href="/zh-TW/types">27種人格</a></li>
         <li><a href="/zh-TW/about">關於</a></li>
         <li><a href="/zh-TW/faq">常見問題</a></li>
-        <li class="lang-switcher">
+        <li class="lang-switcher lang-switcher-desktop">
           <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐 繁體中文</button>
           <div class="lang-dropdown">
             
             <a href="" class="" onclick="switchLang('',event)">简体中文</a>
             
             <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+            
+            <a href="en" class="" onclick="switchLang('en',event)">English</a>
             
           </div>
         </li>
@@ -71,7 +88,7 @@
           
         </div>
       </div>
-      <div class="type-detail-desc">经研究发现，THIN-K人格的大脑构造与常人有根本性不同。正如名称所示，您的大脑长时间处于思考状态。您十分会审判信息，注重论点、论据、逻辑推理、潜在偏见，乃至“作者本人三代以内思想背景调查报告”的全套材料。在这个信息爆炸的时代，您绝不会轻易盲从，会在关系中衡量利弊，也十分捍卫自己的自我空间。当别人看到您独处时在发呆？愚蠢，那不是发呆，那是您的大脑正在对今天接收到的所有信息进行分类、归档和销毁。</div>
+      <div class="type-detail-desc">經研究發現，THIN-K人格的大腦構造與常人有根本性不同。正如名稱所示，您的大腦長時間處於思考狀態。您十分會審判信息，注重論點、論據、邏輯推理、潛在偏見，乃至“作者本人三代以內思想背景調查報告”的全套材料。在這個信息爆炸的時代，您絕不會輕易盲從，會在關係中衡量利弊，也十分捍衛自己的自我空間。當別人看到您獨處時在發呆？愚蠢，那不是發呆，那是您的大腦正在對今天接收到的所有信息進行分類、歸檔和銷燬。</div>
       <div class="type-detail-cta">
         <p>想知道你是不是 {{code}}？去測試一下！</p>
         <a href="/zh-TW/test" class="btn btn-primary">開始SBTI測試</a>
@@ -112,6 +129,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LV2PCXQN0Q');
+</script>
 
 <script src="/js/main.js"></script>
 </body>

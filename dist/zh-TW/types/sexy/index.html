@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEXY（尤物）- SBTI Test</title>
-  <meta name="description" content="当您走进一个房间，照明系统会自动将您识别为天生的尤物，并自觉调暗亮度，以避免能源浪费。当您微笑时，您就变成了微笑着的尤物，周围的空气湿度也会显著下降，因为水蒸气都凝结成了人眼中的爱心。无论是谁，都容易对您的存在产生一种超标的注意力。传说，如果有足够多的SEXY人格聚集在一起开派对，其释放出的综合魅力能量足以暂时扭曲时空结构，让参加者产生“时间变慢了”的幸福错觉。他们不需要卖力表达，很多时候，单是存在本身就已经很像一篇华丽到过分的赋。">
+  <meta name="description" content="當您走進一個房間，照明系統會自動將您識別為天生的尤物，並自覺調暗亮度，以避免能源浪費。當您微笑時，您就變成了微笑著的尤物，周圍的空氣溼度也會顯著下降，因為水蒸氣都凝結成了人眼中的愛心。無論是誰，都容易對您的存在產生一種超標的注意力。傳說，如果有足夠多的SEXY人格聚集在一起開派對，其釋放出的綜合魅力能量足以暫時扭曲時空結構，讓參加者產生“時間變慢了”的幸福錯覺。他們不需要賣力表達，很多時候，單是存在本身就已經很像一篇華麗到過分的賦。">
   <meta name="keywords" content="sbti test, SEXY, 尤物, sbti personality, sbti type">
   <link rel="canonical" href="https://sbti-test.art/zh-TW/types/sexy">
   <link rel="alternate" hreflang="zh-Hans" href="https://sbti-test.art/types/sexy">
@@ -32,7 +32,22 @@
       <img src="/logo.png" alt="SBTI Test" class="logo-img">
       <span class="logo-text">SBTI <span>Test</span></span>
     </a>
-    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    <div class="header-actions">
+      <!-- 移动端独立语言切换 -->
+      <div class="lang-switcher lang-switcher-mobile">
+        <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐</button>
+        <div class="lang-dropdown">
+          
+          <a href="" class="" onclick="switchLang('',event)">简体中文</a>
+          
+          <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+          
+          <a href="en" class="" onclick="switchLang('en',event)">English</a>
+          
+        </div>
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="/zh-TW/">首頁</a></li>
@@ -40,13 +55,15 @@
         <li><a href="/zh-TW/types">27種人格</a></li>
         <li><a href="/zh-TW/about">關於</a></li>
         <li><a href="/zh-TW/faq">常見問題</a></li>
-        <li class="lang-switcher">
+        <li class="lang-switcher lang-switcher-desktop">
           <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐 繁體中文</button>
           <div class="lang-dropdown">
             
             <a href="" class="" onclick="switchLang('',event)">简体中文</a>
             
             <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+            
+            <a href="en" class="" onclick="switchLang('en',event)">English</a>
             
           </div>
         </li>
@@ -71,7 +88,7 @@
           
         </div>
       </div>
-      <div class="type-detail-desc">当您走进一个房间，照明系统会自动将您识别为天生的尤物，并自觉调暗亮度，以避免能源浪费。当您微笑时，您就变成了微笑着的尤物，周围的空气湿度也会显著下降，因为水蒸气都凝结成了人眼中的爱心。无论是谁，都容易对您的存在产生一种超标的注意力。传说，如果有足够多的SEXY人格聚集在一起开派对，其释放出的综合魅力能量足以暂时扭曲时空结构，让参加者产生“时间变慢了”的幸福错觉。他们不需要卖力表达，很多时候，单是存在本身就已经很像一篇华丽到过分的赋。</div>
+      <div class="type-detail-desc">當您走進一個房間，照明系統會自動將您識別為天生的尤物，並自覺調暗亮度，以避免能源浪費。當您微笑時，您就變成了微笑著的尤物，周圍的空氣溼度也會顯著下降，因為水蒸氣都凝結成了人眼中的愛心。無論是誰，都容易對您的存在產生一種超標的注意力。傳說，如果有足夠多的SEXY人格聚集在一起開派對，其釋放出的綜合魅力能量足以暫時扭曲時空結構，讓參加者產生“時間變慢了”的幸福錯覺。他們不需要賣力表達，很多時候，單是存在本身就已經很像一篇華麗到過分的賦。</div>
       <div class="type-detail-cta">
         <p>想知道你是不是 {{code}}？去測試一下！</p>
         <a href="/zh-TW/test" class="btn btn-primary">開始SBTI測試</a>
@@ -112,6 +129,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LV2PCXQN0Q');
+</script>
 
 <script src="/js/main.js"></script>
 </body>

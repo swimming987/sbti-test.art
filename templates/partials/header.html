@@ -4,7 +4,18 @@
       <img src="/logo.png" alt="SBTI Test" class="logo-img">
       <span class="logo-text">SBTI <span>Test</span></span>
     </a>
-    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    <div class="header-actions">
+      <!-- 移动端独立语言切换 -->
+      <div class="lang-switcher lang-switcher-mobile">
+        <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐</button>
+        <div class="lang-dropdown">
+          {{#each altLangs}}
+          <a href="{{dir}}" class="{{#if isCurrent}}current{{/if}}" onclick="switchLang('{{dir}}',event)">{{name}}</a>
+          {{/each}}
+        </div>
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="{{prefix}}/">{{nav.home}}</a></li>
@@ -12,7 +23,7 @@
         <li><a href="{{prefix}}/types">{{nav.types}}</a></li>
         <li><a href="{{prefix}}/about">{{nav.about}}</a></li>
         <li><a href="{{prefix}}/faq">{{nav.faq}}</a></li>
-        <li class="lang-switcher">
+        <li class="lang-switcher lang-switcher-desktop">
           <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐 {{langName}}</button>
           <div class="lang-dropdown">
             {{#each altLangs}}

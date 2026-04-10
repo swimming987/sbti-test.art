@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DRUNK（酒鬼）- SBTI Test</title>
-  <meta name="description" content="您为什么走路摇摇晃晃？您为什么总是情绪高涨？您为什么看东西是重影的？因为您体内流淌的不是血液，是美味的五粮液！是国窖1573！是江小白！是陕西五粮液！哦，美味的白酒，每一滴都在燃烧，都在沸腾。您是否已经习惯了将白酒灌入保温杯，当作白开水一饮而下？多么伟大的白酒！它让您在饭桌上谈笑风生，在厕所里抱着马桶忏悔人生；它让您觉得自己是夜场诗人，是宇宙中心那团不灭的火，直到第二天上午十点，您的头像裂开的核桃，嘴角挂着食物残渣，灵魂缩在角落里。您终于明白，昨晚那个高谈阔论、拍桌怒吼的人，已经成为了一个酒鬼。">
+  <meta name="description" content="您為什麼走路搖搖晃晃？您為什麼總是情緒高漲？您為什麼看東西是重影的？因為您體內流淌的不是血液，是美味的五糧液！是國窖1573！是江小白！是陝西五糧液！哦，美味的白酒，每一滴都在燃燒，都在沸騰。您是否已經習慣了將白酒灌入保溫杯，當作白開水一飲而下？多麼偉大的白酒！它讓您在飯桌上談笑風生，在廁所裡抱著馬桶懺悔人生；它讓您覺得自己是夜場詩人，是宇宙中心那團不滅的火，直到第二天上午十點，您的頭像裂開的核桃，嘴角掛著食物殘渣，靈魂縮在角落裡。您終於明白，昨晚那個高談闊論、拍桌怒吼的人，已經成為了一個酒鬼。">
   <meta name="keywords" content="sbti test, DRUNK, 酒鬼, sbti personality, sbti type">
   <link rel="canonical" href="https://sbti-test.art/zh-TW/types/drunk">
   <link rel="alternate" hreflang="zh-Hans" href="https://sbti-test.art/types/drunk">
@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="zh-Hant" href="https://sbti-test.art/zh-TW/types/drunk">
   <link rel="alternate" hreflang="x-default" href="https://sbti-test.art/types/drunk">
   <meta property="og:title" content="DRUNK（酒鬼）- SBTI">
-  <meta property="og:description" content="烈酒烧喉，不得不醉。">
+  <meta property="og:description" content="烈酒燒喉，不得不醉。">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
@@ -20,7 +20,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "DRUNK - 酒鬼",
-    "description": "烈酒烧喉，不得不醉。",
+    "description": "烈酒燒喉，不得不醉。",
     "author": { "@type": "Person", "name": "蛆肉儿串儿" }
   }
   </script>
@@ -32,7 +32,22 @@
       <img src="/logo.png" alt="SBTI Test" class="logo-img">
       <span class="logo-text">SBTI <span>Test</span></span>
     </a>
-    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    <div class="header-actions">
+      <!-- 移动端独立语言切换 -->
+      <div class="lang-switcher lang-switcher-mobile">
+        <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐</button>
+        <div class="lang-dropdown">
+          
+          <a href="" class="" onclick="switchLang('',event)">简体中文</a>
+          
+          <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+          
+          <a href="en" class="" onclick="switchLang('en',event)">English</a>
+          
+        </div>
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="/zh-TW/">首頁</a></li>
@@ -40,13 +55,15 @@
         <li><a href="/zh-TW/types">27種人格</a></li>
         <li><a href="/zh-TW/about">關於</a></li>
         <li><a href="/zh-TW/faq">常見問題</a></li>
-        <li class="lang-switcher">
+        <li class="lang-switcher lang-switcher-desktop">
           <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐 繁體中文</button>
           <div class="lang-dropdown">
             
             <a href="" class="" onclick="switchLang('',event)">简体中文</a>
             
             <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+            
+            <a href="en" class="" onclick="switchLang('en',event)">English</a>
             
           </div>
         </li>
@@ -65,11 +82,11 @@
         
         <div class="type-detail-info">
           <h1>DRUNK（酒鬼）</h1>
-          <p class="type-detail-intro">烈酒烧喉，不得不醉。</p>
+          <p class="type-detail-intro">烈酒燒喉，不得不醉。</p>
           
         </div>
       </div>
-      <div class="type-detail-desc">您为什么走路摇摇晃晃？您为什么总是情绪高涨？您为什么看东西是重影的？因为您体内流淌的不是血液，是美味的五粮液！是国窖1573！是江小白！是陕西五粮液！哦，美味的白酒，每一滴都在燃烧，都在沸腾。您是否已经习惯了将白酒灌入保温杯，当作白开水一饮而下？多么伟大的白酒！它让您在饭桌上谈笑风生，在厕所里抱着马桶忏悔人生；它让您觉得自己是夜场诗人，是宇宙中心那团不灭的火，直到第二天上午十点，您的头像裂开的核桃，嘴角挂着食物残渣，灵魂缩在角落里。您终于明白，昨晚那个高谈阔论、拍桌怒吼的人，已经成为了一个酒鬼。</div>
+      <div class="type-detail-desc">您為什麼走路搖搖晃晃？您為什麼總是情緒高漲？您為什麼看東西是重影的？因為您體內流淌的不是血液，是美味的五糧液！是國窖1573！是江小白！是陝西五糧液！哦，美味的白酒，每一滴都在燃燒，都在沸騰。您是否已經習慣了將白酒灌入保溫杯，當作白開水一飲而下？多麼偉大的白酒！它讓您在飯桌上談笑風生，在廁所裡抱著馬桶懺悔人生；它讓您覺得自己是夜場詩人，是宇宙中心那團不滅的火，直到第二天上午十點，您的頭像裂開的核桃，嘴角掛著食物殘渣，靈魂縮在角落裡。您終於明白，昨晚那個高談闊論、拍桌怒吼的人，已經成為了一個酒鬼。</div>
       <div class="type-detail-cta">
         <p>想知道你是不是 {{code}}？去測試一下！</p>
         <a href="/zh-TW/test" class="btn btn-primary">開始SBTI測試</a>
@@ -110,6 +127,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LV2PCXQN0Q');
+</script>
 
 <script src="/js/main.js"></script>
 </body>

@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAKE（伪人）- SBTI Test</title>
-  <meta name="description" content="SCP基金会紧急报告：项目编号 SCP-CN-████ “伪人”。在社交场合，伪人是八面玲珑的存在，因为他们切换人格面具比切换手机输入法还快。上一秒还是推心置腹的铁哥们模式，下一秒领导来了，瞬间切换成沉稳可靠好员工模式，连脸上的光泽度和卷曲度都会发生微调。你以为你交到了一个真心懂你的朋友？醒醒。你只是幸运地遇到了一个善于伪装、高性能的仿生人罢了。夜深人静时，伪人把面具一层层摘下来，最后才发现，面具下空得很，正是这些面具构成了自己。">
-  <meta name="keywords" content="sbti test, FAKE, 伪人, sbti personality, sbti type">
+  <title>FAKE（偽人）- SBTI Test</title>
+  <meta name="description" content="SCP基金會緊急報告：項目編號 SCP-CN-████ “偽人”。在社交場合，偽人是八面玲瓏的存在，因為他們切換人格面具比切換手機輸入法還快。上一秒還是推心置腹的鐵哥們模式，下一秒領導來了，瞬間切換成沉穩可靠好員工模式，連臉上的光澤度和捲曲度都會發生微調。你以為你交到了一個真心懂你的朋友？醒醒。你只是幸運地遇到了一個善於偽裝、高性能的仿生人罷了。夜深人靜時，偽人把面具一層層摘下來，最後才發現，面具下空得很，正是這些面具構成了自己。">
+  <meta name="keywords" content="sbti test, FAKE, 偽人, sbti personality, sbti type">
   <link rel="canonical" href="https://sbti-test.art/zh-TW/types/fake">
   <link rel="alternate" hreflang="zh-Hans" href="https://sbti-test.art/types/fake">
   <link rel="alternate" hreflang="en" href="https://sbti-test.art/en/types/fake">
   <link rel="alternate" hreflang="zh-Hant" href="https://sbti-test.art/zh-TW/types/fake">
   <link rel="alternate" hreflang="x-default" href="https://sbti-test.art/types/fake">
-  <meta property="og:title" content="FAKE（伪人）- SBTI">
-  <meta property="og:description" content="已经，没有人类了。">
+  <meta property="og:title" content="FAKE（偽人）- SBTI">
+  <meta property="og:description" content="已經，沒有人類了。">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "FAKE - 伪人",
-    "description": "已经，没有人类了。",
+    "headline": "FAKE - 偽人",
+    "description": "已經，沒有人類了。",
     "author": { "@type": "Person", "name": "蛆肉儿串儿" }
   }
   </script>
@@ -32,7 +32,22 @@
       <img src="/logo.png" alt="SBTI Test" class="logo-img">
       <span class="logo-text">SBTI <span>Test</span></span>
     </a>
-    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    <div class="header-actions">
+      <!-- 移动端独立语言切换 -->
+      <div class="lang-switcher lang-switcher-mobile">
+        <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐</button>
+        <div class="lang-dropdown">
+          
+          <a href="" class="" onclick="switchLang('',event)">简体中文</a>
+          
+          <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+          
+          <a href="en" class="" onclick="switchLang('en',event)">English</a>
+          
+        </div>
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="/zh-TW/">首頁</a></li>
@@ -40,13 +55,15 @@
         <li><a href="/zh-TW/types">27種人格</a></li>
         <li><a href="/zh-TW/about">關於</a></li>
         <li><a href="/zh-TW/faq">常見問題</a></li>
-        <li class="lang-switcher">
+        <li class="lang-switcher lang-switcher-desktop">
           <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐 繁體中文</button>
           <div class="lang-dropdown">
             
             <a href="" class="" onclick="switchLang('',event)">简体中文</a>
             
             <a href="zh-TW" class="current" onclick="switchLang('zh-TW',event)">繁體中文</a>
+            
+            <a href="en" class="" onclick="switchLang('en',event)">English</a>
             
           </div>
         </li>
@@ -64,14 +81,14 @@
         <img class="type-detail-image" src="/image/FAKE.png" alt="FAKE">
         
         <div class="type-detail-info">
-          <h1>FAKE（伪人）</h1>
-          <p class="type-detail-intro">已经，没有人类了。</p>
+          <h1>FAKE（偽人）</h1>
+          <p class="type-detail-intro">已經，沒有人類了。</p>
           
           <div class="type-detail-pattern">維度模式: HLM-MML-MLM-MLM-HLH</div>
           
         </div>
       </div>
-      <div class="type-detail-desc">SCP基金会紧急报告：项目编号 SCP-CN-████ “伪人”。在社交场合，伪人是八面玲珑的存在，因为他们切换人格面具比切换手机输入法还快。上一秒还是推心置腹的铁哥们模式，下一秒领导来了，瞬间切换成沉稳可靠好员工模式，连脸上的光泽度和卷曲度都会发生微调。你以为你交到了一个真心懂你的朋友？醒醒。你只是幸运地遇到了一个善于伪装、高性能的仿生人罢了。夜深人静时，伪人把面具一层层摘下来，最后才发现，面具下空得很，正是这些面具构成了自己。</div>
+      <div class="type-detail-desc">SCP基金會緊急報告：項目編號 SCP-CN-████ “偽人”。在社交場合，偽人是八面玲瓏的存在，因為他們切換人格面具比切換手機輸入法還快。上一秒還是推心置腹的鐵哥們模式，下一秒領導來了，瞬間切換成沉穩可靠好員工模式，連臉上的光澤度和捲曲度都會發生微調。你以為你交到了一個真心懂你的朋友？醒醒。你只是幸運地遇到了一個善於偽裝、高性能的仿生人罷了。夜深人靜時，偽人把面具一層層摘下來，最後才發現，面具下空得很，正是這些面具構成了自己。</div>
       <div class="type-detail-cta">
         <p>想知道你是不是 {{code}}？去測試一下！</p>
         <a href="/zh-TW/test" class="btn btn-primary">開始SBTI測試</a>
@@ -112,6 +129,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LV2PCXQN0Q');
+</script>
 
 <script src="/js/main.js"></script>
 </body>
