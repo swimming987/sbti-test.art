@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{typeCode}}（{{typeCn}}）- SBTI Test</title>
+  <meta name="description" content="{{typeDesc}}">
+  <meta name="keywords" content="sbti test, {{typeCode}}, {{typeCn}}, sbti personality, sbti type">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/types/{{typeSlug}}">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/types/{{typeSlug}}">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/types/{{typeSlug}}">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/types/{{typeSlug}}">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/types/{{typeSlug}}">
+  <meta property="og:title" content="{{typeCode}}（{{typeCn}}）- SBTI">
+  <meta property="og:description" content="{{typeIntro}}">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{typeCode}} - {{typeCn}}",
+    "description": "{{typeIntro}}",
+    "author": { "@type": "Person", "name": "蛆肉儿串儿" }
+  }
+  </script>
+</head>
+<body>
+{{> header}}
+<main class="type-detail-page">
+  <div class="container">
+    <div class="type-detail">
+      <a href="{{prefix}}/types" class="btn btn-sm btn-secondary mb-4">{{typePage.back}}</a>
+      <div class="type-detail-hero card" style="padding:28px">
+        {{#if typeImage}}
+        <img class="type-detail-image" src="/image/{{typeImage}}" alt="{{typeCode}}">
+        {{/if}}
+        <div class="type-detail-info">
+          <h1>{{typeCode}}（{{typeCn}}）</h1>
+          <p class="type-detail-intro">{{typeIntro}}</p>
+          {{#if typePattern}}
+          <div class="type-detail-pattern">{{typePage.pattern}}: {{typePattern}}</div>
+          {{/if}}
+        </div>
+      </div>
+      <div class="type-detail-desc">{{typeDesc}}</div>
+      <div class="type-detail-cta">
+        <p>{{typePage.takeTest}}</p>
+        <a href="{{prefix}}/test" class="btn btn-primary">{{typePage.startTest}}</a>
+      </div>
+    </div>
+  </div>
+</main>
+{{> footer}}
+<script src="/js/main.js"></script>
+</body>
+</html>

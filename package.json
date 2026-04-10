@@ -1,0 +1,12 @@
+{
+  "name": "sbti-test-art",
+  "version": "1.0.0",
+  "description": "SBTI Personality Test - sbti-test.art",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "npx serve dist",
+    "dev": "node build.js && npx serve dist",
+    "cf:deploy": "node build.js && npx wrangler pages deploy dist --project-name=sbti-test-art"
+  },
+  "private": true
+}

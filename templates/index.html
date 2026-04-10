@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{siteTitle}}</title>  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+  <link rel="apple-touch-icon" href="/logo.png">  <meta name="description" content="{{siteDesc}}">
+  <meta name="keywords" content="{{siteKeywords}}">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/">
+  <meta property="og:title" content="{{siteTitle}}">
+  <meta property="og:description" content="{{siteDesc}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{siteUrl}}{{prefix}}/">
+  <meta property="og:site_name" content="SBTI Test">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{siteTitle}}">
+  <meta name="twitter:description" content="{{siteDesc}}">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SBTI Test",
+    "url": "{{siteUrl}}",
+    "description": "{{siteDesc}}",
+    "inLanguage": "{{htmlLang}}"
+  }
+  </script>
+</head>
+<body>
+{{> header}}
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">{{hero.badge}}</div>
+      <h1>{{hero.title}}</h1>
+      <p class="hero-subtitle">{{hero.subtitle}}</p>
+      <div class="hero-actions">
+        <a href="{{prefix}}/test" class="btn btn-primary btn-lg">{{hero.cta}}</a>
+        <a href="{{prefix}}/types" class="btn btn-secondary btn-lg">{{hero.ctaSecondary}}</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-value">27</div><div class="hero-stat-label">{{hero.stats.types}}</div></div>
+        <div class="hero-stat"><div class="hero-stat-value">31</div><div class="hero-stat-label">{{hero.stats.questions}}</div></div>
+        <div class="hero-stat"><div class="hero-stat-value">15</div><div class="hero-stat-label">{{hero.stats.dimensions}}</div></div>
+        <div class="hero-stat"><div class="hero-stat-value">5</div><div class="hero-stat-label">{{hero.stats.models}}</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Viral -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{whyViral.title}}</h2>
+        <p>{{whyViral.subtitle}}</p>
+      </div>
+      <div class="card-grid card-grid-2">
+        {{#each whyViral.reasons}}
+        <div class="card reason-card">
+          <div class="reason-icon">{{icon}}</div>
+          <h3>{{title}}</h3>
+          <p>{{desc}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- Origin -->
+  <section class="section" style="background:var(--soft)">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{origin.title}}</h2>
+      </div>
+      <div class="card" style="max-width:800px;margin:0 auto">
+        <p style="color:var(--text-secondary);font-size:15px;line-height:1.9;margin-bottom:12px">{{origin.p1}}</p>
+        <p style="color:var(--text-secondary);font-size:15px;line-height:1.9;margin-bottom:12px">{{origin.p2}}</p>
+        <p style="color:var(--text-secondary);font-size:15px;line-height:1.9;margin-bottom:16px">{{origin.p3}}</p>
+        <div class="disclaimer-box" style="padding:16px;background:#fff8e1;border:1px solid #ffe082;border-radius:10px;font-size:14px;line-height:1.8;color:#795548">
+          {{origin.disclaimer}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SBTI vs MBTI -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{comparison.title}}</h2>
+      </div>
+      <div class="comparison">
+        <div class="comparison-col highlight">
+          <h3>{{comparison.sbti.name}}</h3>
+          <ul class="comparison-list">
+            {{#each comparison.sbti.items}}
+            <li>{{.}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        <div class="comparison-col">
+          <h3>{{comparison.mbti.name}}</h3>
+          <ul class="comparison-list">
+            {{#each comparison.mbti.items}}
+            <li>{{.}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Five Models -->
+  <section class="section" style="background:var(--soft)">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{models.title}}</h2>
+        <p>{{models.subtitle}}</p>
+      </div>
+      <div class="card-grid card-grid-3">
+        {{#each models.list}}
+        <div class="card model-card">
+          <div class="model-icon">{{icon}}</div>
+          <h3>{{name}}</h3>
+          <div class="model-dims">
+            {{#each dims}}
+            <div class="model-dim">
+              <div class="model-dim-name">{{code}} {{name}}</div>
+              <div class="model-dim-desc">{{desc}}</div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 27 Types Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{typesPreview.title}}</h2>
+        <p>{{typesPreview.subtitle}}</p>
+      </div>
+      <div class="types-grid">
+        {{#each typesList}}
+        <a href="{{prefix}}/types/{{slug}}" class="card type-card">
+          <img class="type-card-image" src="/image/{{image}}" alt="{{code}}" loading="lazy">
+          <div class="type-card-code">{{code}}</div>
+          <div class="type-card-cn">{{cn}}</div>
+          <div class="type-card-intro">{{intro}}</div>
+        </a>
+        {{/each}}
+      </div>
+      <div class="text-center mt-8">
+        <a href="{{prefix}}/types" class="btn btn-secondary">{{typesPreview.viewAll}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to -->
+  <section class="section" style="background:var(--soft)">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{howTo.title}}</h2>
+      </div>
+      <div class="steps-grid">
+        {{#each howTo.steps}}
+        <div class="card step-card">
+          <div class="step-num">{{num}}</div>
+          <h3>{{title}}</h3>
+          <p>{{desc}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{faq.title}}</h2>
+      </div>
+      <div class="faq-list">
+        {{#each faq.items}}
+        <details class="faq-item">
+          <summary>{{q}}</summary>
+          <div class="faq-answer">{{a}}</div>
+        </details>
+        {{/each}}
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {{#each faq.items}}
+          {
+            "@type": "Question",
+            "name": "{{q}}",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{a}}" }
+          }{{/each}}
+        ]
+      }
+      </script>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>{{cta.title}}</h2>
+        <p>{{cta.subtitle}}</p>
+        <a href="{{prefix}}/test" class="btn btn-lg">{{cta.button}}</a>
+      </div>
+    </div>
+  </section>
+</main>
+{{> footer}}
+<script src="/js/main.js"></script>
+</body>
+</html>

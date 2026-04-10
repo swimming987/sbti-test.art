@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{test.title}} | SBTI Test</title>
+  <meta name="description" content="{{siteDesc}}">
+  <meta name="keywords" content="{{siteKeywords}}">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/test">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/test">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/test">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/test">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/test">
+  <meta property="og:title" content="{{test.title}}">
+  <meta property="og:description" content="{{siteDesc}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{siteUrl}}{{prefix}}/test">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "SBTI Personality Test",
+    "url": "{{siteUrl}}{{prefix}}/test",
+    "applicationCategory": "Entertainment",
+    "operatingSystem": "Web Browser"
+  }
+  </script>
+</head>
+<body>
+{{> header}}
+<main class="test-page">
+  <div class="container">
+    <div class="test-card">
+      <div class="test-topbar">
+        <div class="progress-bar"><span id="progressBar"></span></div>
+        <div class="progress-text" id="progressText">0 / 31</div>
+      </div>
+      <div id="questionList" class="question-list"></div>
+      <div class="test-actions">
+        <div class="test-hint" id="testHint">{{test.hintIncomplete}}</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="{{prefix}}/" class="btn btn-secondary">{{test.backHome}}</a>
+          <button id="submitBtn" class="btn btn-primary" disabled>{{test.submit}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{> footer}}
+<script>
+  const SBTI_LANG = '{{langCode}}';
+  const SBTI_PREFIX = '{{prefix}}';
+  const SBTI_I18N = {
+    question: '{{test.question}}',
+    dimHidden: '{{test.dimHidden}}',
+    supplementary: '{{test.supplementary}}',
+    hintIncomplete: '{{test.hintIncomplete}}',
+    hintComplete: '{{test.hintComplete}}'
+  };
+  const SBTI_QUESTIONS = {{questionsJSON}};
+  const SBTI_SPECIAL = {{specialQuestionsJSON}};
+  const SBTI_TYPES = {{typesJSON}};
+  const SBTI_IMAGES = {{imagesJSON}};
+  const SBTI_NORMAL = {{normalTypesJSON}};
+  const SBTI_DIM = {{dimensionsJSON}};
+</script>
+<script src="/js/test.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

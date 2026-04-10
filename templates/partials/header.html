@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{prefix}}/" class="logo">
+      <img src="/logo.png" alt="SBTI Test" class="logo-img">
+      <span class="logo-text">SBTI <span>Test</span></span>
+    </a>
+    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="{{prefix}}/">{{nav.home}}</a></li>
+        <li><a href="{{prefix}}/test">{{nav.test}}</a></li>
+        <li><a href="{{prefix}}/types">{{nav.types}}</a></li>
+        <li><a href="{{prefix}}/about">{{nav.about}}</a></li>
+        <li><a href="{{prefix}}/faq">{{nav.faq}}</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn" onclick="this.nextElementSibling.classList.toggle('open')">🌐 {{langName}}</button>
+          <div class="lang-dropdown">
+            {{#each altLangs}}
+            <a href="{{dir}}" class="{{#if isCurrent}}current{{/if}}" onclick="switchLang('{{dir}}',event)">{{name}}</a>
+            {{/each}}
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{aboutPage.title}} | SBTI Test</title>
+  <meta name="description" content="{{aboutPage.what.p1}}">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/about">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/about">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/about">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/about">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/about">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{{> header}}
+<main class="content-page">
+  <div class="container">
+    <div class="content-card">
+      <h1>{{aboutPage.title}}</h1>
+
+      <h2>{{aboutPage.what.title}}</h2>
+      <p>{{aboutPage.what.p1}}</p>
+      <p>{{aboutPage.what.p2}}</p>
+      <p>{{aboutPage.what.p3}}</p>
+
+      <h2>{{aboutPage.features.title}}</h2>
+      <ul>
+        {{#each aboutPage.features.items}}
+        <li>{{.}}</li>
+        {{/each}}
+      </ul>
+
+      <h2>{{aboutPage.creator.title}}</h2>
+      <p>{{aboutPage.creator.text}}</p>
+
+      <h2>{{aboutPage.disclaimer.title}}</h2>
+      <div class="disclaimer-box">{{aboutPage.disclaimer.text}}</div>
+    </div>
+  </div>
+</main>
+{{> footer}}
+<script src="/js/main.js"></script>
+</body>
+</html>

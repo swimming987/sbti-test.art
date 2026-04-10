@@ -1,0 +1,294 @@
+{
+  "lang": "en",
+  "langName": "English",
+  "htmlLang": "en",
+  "dir": "en",
+  "siteTitle": "SBTI Personality Test - Free Online Test Your True Personality",
+  "siteTitleShort": "SBTI Personality Test",
+  "siteDesc": "SBTI is an entertainment-based personality test with 15 dimensions, 31 questions, and 27 personality types. More real and more fun than MBTI — find out which type you are!",
+  "siteKeywords": "sbti test, sbti, sbti personality test, personality test, personality quiz, mbti alternative, 27 personality types",
+  "nav": {
+    "home": "Home",
+    "test": "Take the Test",
+    "types": "27 Types",
+    "about": "About",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "🔥 The Most Viral Personality Test of 2026",
+    "title": "MBTI is old news. SBTI just dropped.",
+    "subtitle": "SBTI is a free online entertainment personality test based on 15 dimensions, featuring 31 questions and 27 personality types. Created by Bilibili creator @蛆肉儿串儿, it went mega-viral across Chinese social media and is now the hottest personality quiz among young people.",
+    "cta": "Take the Free SBTI Test",
+    "ctaSecondary": "See All 27 Types",
+    "stats": {
+      "types": "27 Personality Types",
+      "questions": "31 Test Questions",
+      "dimensions": "15 Analysis Dimensions",
+      "models": "5 Core Models"
+    }
+  },
+  "whyViral": {
+    "title": "Why Did SBTI Blow Up?",
+    "subtitle": "The free SBTI online test went absolutely viral on Chinese social media, becoming THE topic among young people.",
+    "reasons": [
+      { "icon": "🎯", "title": "Brutally Honest Roasts", "desc": "SBTI doesn't sugarcoat your flaws — it hits you where it hurts. Loser, Faker, Deadweight, Clown... these seemingly savage labels had millions of people screaming: 'That's literally me!'" },
+      { "icon": "🌐", "title": "Peak Internet Culture", "desc": "Questions and results are packed with internet slang and meme culture that young people live for. OJBK (The Unbothered), WOC! (The Shook One), ZZZZ (The Playing Dead) — every name is a perfect cultural bullseye." },
+      { "icon": "📱", "title": "Built-In Social Currency", "desc": "Everyone who takes the test gets a unique personality result they can instantly share. When you see your friend's hilarious result, you just HAVE to take it yourself — that's how it goes viral." },
+      { "icon": "💡", "title": "Perfectly Captures Gen Z Vibes", "desc": "In a hyper-competitive, high-pressure world, young people crave being understood but fear being labeled. SBTI uses humor to release that tension, turning self-deprecation into a superpower." }
+    ]
+  },
+  "origin": {
+    "title": "The Origin Story of SBTI",
+    "p1": "SBTI (short for: Shit-Based Type Indicator) was created by Bilibili content creator @蛆肉儿串儿. Known for a unique sense of humor and sharp observations, this creator has a massive following on Bilibili.",
+    "p2": "SBTI was born from a rethink of traditional personality tests. While MBTI and similar tests are widely known, they're often seen as too generic and overly positive. @蛆肉儿串儿 decided to create a personality test that's more real and more fun — one that doesn't shy away from human weaknesses.",
+    "p3": "Carefully designed, SBTI features 27 personality types covering everything from leaders to losers, from mama bears to alcoholics. Each type has a unique personality profile that helps you understand yourself and others — with a laugh.",
+    "disclaimer": "Official Disclaimer: SBTI is purely for entertainment. Don't take it seriously. The results don't define the real you, and they shouldn't be used to judge yourself or others. Keep a sense of humor and just have fun!"
+  },
+  "comparison": {
+    "title": "SBTI vs MBTI: What's the Difference?",
+    "sbti": {
+      "name": "SBTI Personality Test",
+      "items": [
+        "27 personality types — way more variety",
+        "15 dimensions for deeper analysis",
+        "Humorous, down-to-earth style",
+        "Questions based on real life and real feelings",
+        "Honest descriptions that don't dodge weaknesses",
+        "Freshly created, tuned into today's youth"
+      ]
+    },
+    "mbti": {
+      "name": "Traditional MBTI",
+      "items": [
+        "16 personality types, relatively fixed",
+        "4 dimensions: E/I, S/N, T/F, J/P",
+        "Academic, serious testing style",
+        "Questions lean toward work scenarios and abstract topics",
+        "Results tend to be positive and flattering",
+        "Based on a theory framework from the 1940s"
+      ]
+    }
+  },
+  "models": {
+    "title": "The 5 Core Models of SBTI",
+    "subtitle": "SBTI is built on five core models that analyze your personality from different angles",
+    "list": [
+      {
+        "name": "Self Model",
+        "icon": "🪞",
+        "dims": [
+          { "code": "S1", "name": "Self-Esteem & Confidence", "desc": "Evaluates how you perceive and assess yourself." },
+          { "code": "S2", "name": "Self-Clarity", "desc": "Reflects how well you understand your true thoughts and feelings." },
+          { "code": "S3", "name": "Core Values", "desc": "Measures your ambition and drive for achievement." }
+        ]
+      },
+      {
+        "name": "Emotional Model",
+        "icon": "❤️",
+        "dims": [
+          { "code": "E1", "name": "Attachment Security", "desc": "Tests your sense of security in intimate relationships." },
+          { "code": "E2", "name": "Emotional Investment", "desc": "Reflects how much you invest in romantic relationships." },
+          { "code": "E3", "name": "Boundaries & Dependency", "desc": "Evaluates your need for independence in relationships." }
+        ]
+      },
+      {
+        "name": "Attitude Model",
+        "icon": "🌍",
+        "dims": [
+          { "code": "A1", "name": "Worldview", "desc": "Reflects your view of human nature." },
+          { "code": "A2", "name": "Rules & Flexibility", "desc": "Tests your attitude toward rules and structure." },
+          { "code": "A3", "name": "Sense of Purpose", "desc": "Measures how much meaning you find in life." }
+        ]
+      },
+      {
+        "name": "Action Drive Model",
+        "icon": "⚡",
+        "dims": [
+          { "code": "Ac1", "name": "Motivation Type", "desc": "Reflects what drives you to take action." },
+          { "code": "Ac2", "name": "Decision-Making Style", "desc": "Tests how decisive you are when making choices." },
+          { "code": "Ac3", "name": "Execution Mode", "desc": "Measures your follow-through and planning ability." }
+        ]
+      },
+      {
+        "name": "Social Model",
+        "icon": "👥",
+        "dims": [
+          { "code": "So1", "name": "Social Initiative", "desc": "Tests how proactive you are in social situations." },
+          { "code": "So2", "name": "Interpersonal Boundaries", "desc": "Reflects your sense of boundaries in relationships." },
+          { "code": "So3", "name": "Expression & Authenticity", "desc": "Measures your self-expression style and genuineness." }
+        ]
+      }
+    ]
+  },
+  "typesPreview": {
+    "title": "27 SBTI Personality Types",
+    "subtitle": "SBTI classifies personalities into 27 types, each with unique traits and behavioral patterns",
+    "viewDetail": "View Details",
+    "viewAll": "See All 27 Types →"
+  },
+  "howTo": {
+    "title": "How to Take the SBTI Test?",
+    "steps": [
+      { "num": "1", "title": "Go to the SBTI Test Page", "desc": "Hit the 'Take the SBTI Test' button to enter the test. The SBTI test has 31 questions in randomized order to ensure fairness and accuracy." },
+      { "num": "2", "title": "Answer SBTI Questions Honestly", "desc": "Each SBTI question has three options. Pick the answer that best matches your real thoughts and behavior. The accuracy of your SBTI results depends on how honest you are. We recommend taking the test in a quiet environment." },
+      { "num": "3", "title": "View Your SBTI Results", "desc": "After completing all questions, the system will automatically analyze your scores across 15 dimensions and match you with your best-fit personality type. You can view detailed personality insights, dimension scores, and match analysis." },
+      { "num": "4", "title": "Share Your SBTI Results", "desc": "Get your unique SBTI personality result link and share it with friends. You can also invite friends to take the test and see what types they get." }
+    ]
+  },
+  "faq": {
+    "title": "SBTI FAQ",
+    "items": [
+      { "q": "What's the difference between SBTI and MBTI?", "a": "SBTI is funnier, more honest, and more relatable than MBTI. With 27 personality types and 15 analysis dimensions, it's more comprehensive than traditional tests. The questions are designed with internet culture in mind, making them way more relatable." },
+      { "q": "Why did SBTI go viral?", "a": "SBTI went viral thanks to its brutally honest roasts, perfect integration of internet memes, built-in social sharing appeal, and its uncanny ability to nail exactly how today's young people feel." },
+      { "q": "Who created SBTI?", "a": "SBTI was created by Bilibili content creator @蛆肉儿串儿, known for a unique sense of humor and sharp insight. They created this more honest and entertaining personality test." },
+      { "q": "How long does the SBTI test take?", "a": "The SBTI test has 31 questions and takes about 5–8 minutes. Each question flows seamlessly into the next for a smooth experience." },
+      { "q": "Are SBTI results accurate?", "a": "SBTI is an entertainment personality test — results are for fun only. It can help you understand yourself better, but please don't use the results to make life decisions." },
+      { "q": "How do I share my SBTI results?", "a": "After finishing the SBTI test, you can copy your unique result link and share it with friends so they can take the test too." },
+      { "q": "What is the hidden personality type DRUNK?", "a": "DRUNK (The Alcoholic) is SBTI's hidden personality type — it only appears when you trigger specific conditions in a special question. If you have a... special enthusiasm for alcohol, you might just unlock this secret type." },
+      { "q": "Why did I get HHHH (The Giggler)?", "a": "When every personality type in the standard library scores below 60% match, the system assigns you HHHH (The Giggler). This means your brain wiring is so unique that standard categories just don't apply to you." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Discover the Real You?",
+    "subtitle": "Take the SBTI personality test now — unlock your personality code and find out who you really are",
+    "button": "Start the SBTI Test Now"
+  },
+  "footer": {
+    "slogan": "A More Fun, More Real Personality Test",
+    "disclaimer": "This test is for entertainment only — don't take it seriously",
+    "creator": "Original Creator: Bilibili @蛆肉儿串儿",
+    "copyright": "© 2026 SBTI Test. All rights reserved.",
+    "links": {
+      "test": "Take the Test",
+      "types": "27 Types",
+      "faq": "FAQ",
+      "about": "About",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookie": "Cookie Policy"
+    },
+    "sections": {
+      "test": "SBTI Test",
+      "legal": "Legal"
+    }
+  },
+  "test": {
+    "title": "SBTI Personality Test - Start Test",
+    "progress": "/ {{total}}",
+    "question": "Question {{num}}",
+    "dimHidden": "Dimension Hidden",
+    "supplementary": "Bonus Question",
+    "hintIncomplete": "You gotta answer everything before moving on. The world's chaotic enough — at least finish the quiz.",
+    "hintComplete": "All done. Now you may submit your digital soul for judgment.",
+    "submit": "Submit & See Results",
+    "backHome": "Back to Home"
+  },
+  "result": {
+    "title": "SBTI Test Results",
+    "yourType": "Your Primary Type",
+    "hiddenActivated": "Hidden Personality Activated",
+    "systemFallback": "System Forced Fallback",
+    "dimTitle": "15-Dimension Scores",
+    "analysisTitle": "Quick Personality Breakdown",
+    "noteTitle": "Friendly Reminder",
+    "noteNormal": "This test is for entertainment only. Don't use it as a diagnosis, job interview prep, dating criteria, breakup excuse, séance guide, fortune telling, or life sentence. You can laugh, but don't take it too seriously.",
+    "noteSpecial": "This test is for entertainment only. The hidden personality and giggler fallback are deliberate trolls planted by the creator. Do not treat results as medical, psychological, physiognomic, astrological, or paranormal evidence.",
+    "authorTitle": "A Word from the Creator",
+    "authorP1": "This test was originally posted by Bilibili creator 蛆肉儿串儿 (UID417038183). It started as an attempt to convince a friend to quit drinking.",
+    "authorP2": "Since the creator's personality type is SHIT (The Hater), everyone got roasted equally — sorry about that!! But I'm an absolute goddess, so you'll definitely forgive me. If you're on Bilibili, feel free to follow me.",
+    "authorP3": "About this test: I couldn't perfectly balance entertainment and professionalism, so some personality descriptions might be vague or totally off (e.g., 'Loser' might not actually be a loser). If I offended you, I'm really sorry!!",
+    "authorP4": "Given limited time and energy, I just threw this together for fun — I'll keep improving it over time. The point is to have fun, so please don't use it for profit.",
+    "restart": "Retake Test",
+    "backHome": "Back to Home",
+    "share": "Share Results",
+    "shareLink": "Copy Share Link",
+    "shareCopied": "Link Copied!",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "matchHigh": "High dimension hit rate — this result can be considered your primary personality profile.",
+    "matchDrunk": "Ethanol affinity too strong — the system has bypassed standard personality judgment.",
+    "matchLow": "The standard personality library collectively gave up on your brain wiring, so the system force-assigned you HHHH.",
+    "matchPercent": "Match {{pct}}% · Exact hits {{exact}}/15 dimensions",
+    "matchDrunkBadge": "Match 100% · Alcohol anomaly factor has taken over",
+    "matchLowBadge": "Highest standard match only {{pct}}%"
+  },
+  "typePage": {
+    "title": "{{code}} ({{cn}}) - SBTI Personality Type Explained",
+    "back": "← Back to All Types",
+    "pattern": "Dimension Pattern",
+    "related": "Related Personality Types",
+    "takeTest": "Think you might be {{code}}? Take the test and find out!",
+    "startTest": "Start SBTI Test"
+  },
+  "typesPage": {
+    "title": "All 27 SBTI Personality Types",
+    "subtitle": "From CTRL (The Puppeteer) to DEAD (The Dead One), each SBTI type has its own unique personality profile",
+    "viewDetail": "View Details →"
+  },
+  "aboutPage": {
+    "title": "About the SBTI Personality Test",
+    "what": {
+      "title": "What is SBTI?",
+      "p1": "SBTI (Shit-Based Type Indicator) is an entertainment personality test based on 15 dimensions, featuring 30 standard questions plus 2 special questions (including 1 hidden trigger question), with a total of 27 personality types in the result library.",
+      "p2": "Unlike traditional MBTI, SBTI uses naming conventions rooted in Chinese internet culture — like CTRL (The Puppeteer), BOSS (The Leader), DRUNK (The Alcoholic) — making it much more relatable to young people.",
+      "p3": "The test includes the hidden personality DRUNK (triggered by a special question) and the fallback personality HHHH (assigned when standard personality match rates are very low), adding an element of fun and discovery to the whole experience."
+    },
+    "features": {
+      "title": "Features of the SBTI Test",
+      "items": [
+        "15 Core Dimensions: Covering self, emotion, attitude, action, social, and more",
+        "27 Personality Types: From CTRL (The Puppeteer) to DEAD (The Dead One), each with unique traits",
+        "Hidden Mechanics: Includes a special-trigger hidden personality and a system fallback personality",
+        "Visual Results: Each personality comes with a custom poster and detailed breakdown",
+        "Entertainment-First: Uses internet meme culture and slang for names that stick and spread"
+      ]
+    },
+    "creator": {
+      "title": "The Creator",
+      "text": "SBTI was created by Bilibili content creator @蛆肉儿串儿 (UID417038183). It originally started as an attempt to convince a friend to quit drinking, and eventually evolved into a full personality test system."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "SBTI is purely for entertainment — don't take it seriously. The results don't represent the real you, shouldn't be used to define yourself or others, and absolutely should not be used for any commercial, medical, or psychological purposes. Keep a sense of humor, stay open-minded, and enjoy the ride!"
+    }
+  },
+  "legal": {
+    "lastUpdated": "Last Updated: April 10, 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "sections": [
+        { "title": "Overview", "content": "sbti-test.art (hereinafter referred to as \"this site\") respects and protects the privacy of all users. This privacy policy explains how we collect, use, and protect your information." },
+        { "title": "Information Collection", "content": "This site is a purely static website that does not require user registration or login. We do not collect any personally identifiable information (PII). Your SBTI test answers are processed locally in your browser and are never transmitted to any server." },
+        { "title": "Cookie Usage", "content": "This site may use essential cookies to save your language preference settings. We do not use cookies for user tracking or advertising purposes." },
+        { "title": "Third-Party Services", "content": "This site is hosted on Cloudflare Pages. Cloudflare may collect basic access log information (such as IP addresses, browser types, etc.) for security and performance optimization purposes. Please refer to Cloudflare's privacy policy for details." },
+        { "title": "Data Security", "content": "Since this site does not collect or store user data, there is no risk of data breaches. All test processing is completed on the client side in your browser." },
+        { "title": "Children's Privacy", "content": "This site does not intentionally collect personal information from children under the age of 13. If you are a parent or guardian and discover that your child has provided us with personal information, please contact us." },
+        { "title": "Policy Changes", "content": "We may update this privacy policy from time to time. Any changes will be posted on this page with an updated \"Last Updated\" date." },
+        { "title": "Contact Us", "content": "If you have any questions about this privacy policy, please contact us through the contact methods provided on this site." }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "sections": [
+        { "title": "Service Description", "content": "sbti-test.art provides a free online SBTI personality test service. This test is for entertainment purposes only and does not constitute any form of psychological, medical, or professional advice." },
+        { "title": "Terms of Use", "content": "By using this site, you agree to these terms of service. If you do not agree to these terms, please stop using this site. This site is open to users of all ages, but we recommend that minors use it under parental guidance." },
+        { "title": "Intellectual Property", "content": "The original content of the SBTI personality test (including questions, personality descriptions, personality posters, etc.) was created by Bilibili content creator @蛆肉儿串儿, and all related intellectual property rights belong to the original author. This site serves solely as an online implementation platform for the test." },
+        { "title": "Disclaimer", "content": "Test results are for entertainment reference only and do not represent a scientific personality assessment. We are not responsible for any decisions or consequences arising from the use of test results. Please do not use test results for hiring, matchmaking, medical diagnosis, or other serious scenarios." },
+        { "title": "Prohibited Conduct", "content": "Users shall not: (1) use the content of this site for commercial profit; (2) maliciously attack or interfere with the normal operation of this site; (3) scrape or bulk download content from this site; (4) distort or tamper with test results to mislead others." },
+        { "title": "Service Changes", "content": "We reserve the right to modify, suspend, or terminate the service at any time without prior notice." },
+        { "title": "Terms Modification", "content": "We may modify these terms of service from time to time. Continued use of this site after modifications constitutes acceptance of the modified terms." }
+      ]
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "sections": [
+        { "title": "What Are Cookies?", "content": "Cookies are small text files stored on your browser by websites to remember your preferences and improve your browsing experience." },
+        { "title": "How We Use Cookies", "content": "This site only uses essential functional cookies to save your language preference settings (Simplified Chinese / Traditional Chinese / English). We do not use any advertising cookies, analytics cookies, or third-party tracking cookies." },
+        { "title": "Cookie Types", "content": "Language Preference Cookie: Stores your chosen display language so that your preferred language is automatically used on your next visit. This cookie does not contain any personal information." },
+        { "title": "Managing Cookies", "content": "You can manage or delete cookies through your browser settings. Disabling cookies may prevent your language preference from being saved, but it will not affect the normal functioning of the test." },
+        { "title": "Third-Party Cookies", "content": "This site is hosted on Cloudflare Pages. Cloudflare may set necessary security cookies (such as __cflb, etc.) for load balancing and security protection. These cookies are part of Cloudflare's services and are beyond our control." },
+        { "title": "Policy Updates", "content": "We may update this cookie policy to reflect changes in our practices. Any changes will be posted on this page." }
+      ]
+    }
+  }
+}

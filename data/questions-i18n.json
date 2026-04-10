@@ -1,0 +1,1128 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "dim": "S1",
+      "text": {
+        "zh-CN": "我不仅是屌丝，我还是joker,我还是咸鱼，这辈子没谈过一场恋爱，胆怯又自卑，我的青春就是一场又一场的意淫，每一天幻想着我也能有一个女孩子和我一起压马路，一起逛街，一起玩，现实却是爆了父母金币，读了个烂学校，混日子之后找班上，没有理想，没有目标，没有能力的三无人员，每次看到你能在网上开屌丝的玩笑，我都想哭，我就是地底下的老鼠，透过下水井的缝隙，窥探地上的各种美好，每一次看到这种都是对我心灵的一次伤害，对我生存空间的一次压缩，求求哥们给我们这种小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片",
+        "zh-TW": "我不仅是屌絲，我還是joker,我還是咸鱼，這辈子沒談過一場戀愛，膽怯又自卑，我的青春就是一場又一場的意淫，每一天幻想着我也能有一个女孩子和我一起壓马路，一起逛街，一起玩，現實卻是爆了父母金币，讀了个烂學校，混日子之后找班上，沒有理想，沒有目标，沒有能力的三无人员，每次看到你能在网上开屌絲的玩笑，我都想哭，我就是地底下的老鼠，透過下水井的缝隙，窺探地上的各種美好，每一次看到這種都是對我心灵的一次伤害，對我生存空間的一次壓缩，求求哥们給我们這種小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片",
+        "en": "I'm not just a loser—I'm the joker, the deadweight. Never been in a relationship, too scared and too insecure. My whole youth was just one big fantasy loop, daydream about having a girl to walk the streets with. Reality? Burned my parents' money, went to a trash school, then drifted into a dead-end job. No dreams, no goals, no skills—a complete nobody. Every time I see people making fun of losers online, I want to cry. I'm the rat below, peeking through sewer grates at the beauty above. Every joke is a knife to my soul. Please, just give us clowns a chance. I don't want to wake up with tears on my pillow again."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "我哭了。。",
+            "zh-TW": "我哭了。。",
+            "en": "I'm crying..."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "这是什么。。",
+            "zh-TW": "這是什么。。",
+            "en": "What even is this..."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "这不是我！",
+            "zh-TW": "這不是我！",
+            "en": "This ain't me!"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "dim": "S1",
+      "text": {
+        "zh-CN": "我不够好，周围的人都比我优秀",
+        "zh-TW": "我不够好，周围的人都比我优秀",
+        "en": "I'm not good enough. Everyone around me is better than me."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "确实",
+            "zh-TW": "確實",
+            "en": "True"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "有时",
+            "zh-TW": "有時",
+            "en": "Sometimes"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不是",
+            "zh-TW": "不是",
+            "en": "Not really"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "dim": "S2",
+      "text": {
+        "zh-CN": "我很清楚真正的自己是什么样的",
+        "zh-TW": "我很清楚真正的自己是什么樣的",
+        "en": "I have a clear sense of who I really am."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "dim": "S2",
+      "text": {
+        "zh-CN": "我内心有真正追求的东西",
+        "zh-TW": "我内心有真正追求的东西",
+        "en": "I have something I truly pursue deep inside."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "dim": "S3",
+      "text": {
+        "zh-CN": "我一定要不断往上爬、变得更厉害",
+        "zh-TW": "我一定要不斷往上爬、变得更厉害",
+        "en": "I must keep climbing up and becoming more capable."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "dim": "S3",
+      "text": {
+        "zh-CN": "外人的评价对我来说无所吊谓。",
+        "zh-TW": "外人的評價對我来說无所吊謂。",
+        "en": "What others think of me doesn't really matter."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "dim": "E1",
+      "text": {
+        "zh-CN": "对象超过5小时没回消息，说自己窜稀了，你会怎么想？",
+        "zh-TW": "對象超過5小時沒回消息，說自己竄稀了，你會怎么想？",
+        "en": "Your partner hasn't replied for over 5 hours and says they had diarrhea. What do you think?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "拉稀不可能5小时，也许ta隐瞒了我。",
+            "zh-TW": "拉稀不可能5小時，也許ta隱瞞了我。",
+            "en": "Diarrhea doesn't last 5 hours. Maybe they're hiding something."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "在信任和怀疑之间摇摆。",
+            "zh-TW": "在信任和懷疑之間摇擺。",
+            "en": "I'm torn between trusting and doubting."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "也许今天ta真的不太舒服。",
+            "zh-TW": "也許今天ta真的不太舒服。",
+            "en": "Maybe they really weren't feeling well today."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "dim": "E1",
+      "text": {
+        "zh-CN": "我在感情里经常担心被对方抛弃",
+        "zh-TW": "我在感情里經常擔心被對方抛弃",
+        "en": "I often worry about being abandoned in relationships."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "是的",
+            "zh-TW": "是的",
+            "en": "Yes"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "偶尔",
+            "zh-TW": "偶爾",
+            "en": "Sometimes"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不是",
+            "zh-TW": "不是",
+            "en": "Not really"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "dim": "E2",
+      "text": {
+        "zh-CN": "我对天发誓，我对待每一份感情都是认真的！",
+        "zh-TW": "我對天發誓，我對待每一份感情都是認真的！",
+        "en": "I swear, I take every relationship seriously!"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "并没有",
+            "zh-TW": "并沒有",
+            "en": "Not really"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "也许？",
+            "zh-TW": "也許？",
+            "en": "Maybe?"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "是的！（问心无愧骄傲脸）",
+            "zh-TW": "是的！（問心无愧驕傲脸）",
+            "en": "Yes! (proud and guilt-free)"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dim": "E2",
+      "text": {
+        "zh-CN": "你的恋爱对象是一个尊老爱幼，温柔敦厚，洁身自好，光明磊落，大义凛然，能言善辩，口才流利，观察入微，见多识广，博学多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，积极进取，意气风发，玉树临风，国色天香，倾国倾城，花容月貌的人，此时你会？",
+        "zh-TW": "你的戀愛對象是一个尊老愛幼，溫柔敦厚，洁身自好，光明磊落，大義凛然，能言善辯，口才流利，觀察入微，见多識广，博學多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，積極进取，意气风發，玉树臨风，國色天香，倾國倾城，花容月貌的人，此時你會？",
+        "en": "Your romantic partner is kind, gentle, upright, eloquent, observant, knowledgeable, humble, kind-hearted, ambitious, and stunningly attractive—basically perfect. How would you react?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "就算ta再优秀我也不会陷入太深。",
+            "zh-TW": "就算ta再优秀我也不會陷入太深。",
+            "en": "Even if they're that perfect, I wouldn't fall too deep."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "会介于A和C之间。",
+            "zh-TW": "會介于A和C之間。",
+            "en": "I'd be somewhere between A and C."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "会非常珍惜ta，也许会变成恋爱脑。",
+            "zh-TW": "會非常珍惜ta，也許會变成戀愛脑。",
+            "en": "I'd treasure them deeply, maybe even become love-obsessed."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dim": "E3",
+      "text": {
+        "zh-CN": "恋爱后，对象非常黏人，你作何感想？",
+        "zh-TW": "戀愛后，對象非常黏人，你作何感想？",
+        "en": "After getting into a relationship, your partner is super clingy. How do you feel?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "那很爽了",
+            "zh-TW": "那很爽了",
+            "en": "That's awesome"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "都行无所谓",
+            "zh-TW": "都行无所謂",
+            "en": "Whatever, I'm fine with it"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "我更喜欢保留独立空间",
+            "zh-TW": "我更喜歡保留獨立空間",
+            "en": "I prefer keeping my personal space"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dim": "E3",
+      "text": {
+        "zh-CN": "我在任何关系里都很重视个人空间",
+        "zh-TW": "我在任何關系里都很重视个人空間",
+        "en": "I value personal space in any relationship."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "我更喜欢依赖与被依赖",
+            "zh-TW": "我更喜歡依赖与被依赖",
+            "en": "I prefer depending on and being depended on"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "看情况",
+            "zh-TW": "看情況",
+            "en": "Depends"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "是的！（斩钉截铁地说道）",
+            "zh-TW": "是的！（斩钉截铁地說道）",
+            "en": "Yes! (firmly stated)"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dim": "A1",
+      "text": {
+        "zh-CN": "大多数人是善良的",
+        "zh-TW": "大多数人是善良的",
+        "en": "Most people are kind."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "其实邪恶的人心比世界上的痔疮更多。",
+            "zh-TW": "其實邪惡的人心比世界上的痔瘡更多。",
+            "en": "Actually, there are more evil hearts than hemorrhoids in the world."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "也许吧。",
+            "zh-TW": "也許吧。",
+            "en": "Maybe."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "是的，我愿相信好人更多。",
+            "zh-TW": "是的，我愿相信好人更多。",
+            "en": "Yes, I choose to believe good people outnumber the bad."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dim": "A1",
+      "text": {
+        "zh-CN": "你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华为、OPPO手机看都萌，实在是非常萌的那种），她递给你一根棒棒糖，此时你作何感想？",
+        "zh-TW": "你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华為、OPPO手机看都萌，實在是非常萌的那種），她遞給你一根棒棒糖，此時你作何感想？",
+        "en": "You're walking down the street when an adorable little girl bounces toward you and hands you a lollipop. What's your reaction?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "呜呜她真好真可爱！居然给我棒棒糖！",
+            "zh-TW": "呜呜她真好真可愛！居然給我棒棒糖！",
+            "en": "Aww she's so sweet and cute! She gave me candy!"
+          },
+          "value": 3
+        },
+        {
+          "label": {
+            "zh-CN": "一脸懵逼，作挠头状",
+            "zh-TW": "一脸懵逼，作挠頭状",
+            "en": "Confused, scratching my head"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "这也许是一种新型诈骗？还是走开为好。",
+            "zh-TW": "這也許是一種新型詐騙？還是走开為好。",
+            "en": "This might be a new scam. Better walk away."
+          },
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dim": "A2",
+      "text": {
+        "zh-CN": "快考试了，学校规定必须上晚自习，请假会扣分，但今晚你约了女/男神一起玩《绝地求生：刺激战场》（一款刺激的游戏），你怎么办？",
+        "zh-TW": "快考试了，學校規定必須上晚自習，请假會扣分，但今晚你约了女/男神一起玩《絕地求生：刺激戰場》（一款刺激的游戏），你怎么辦？",
+        "en": "Exams are coming up. School requires evening study hall, and skipping means losing points. But tonight, you have plans to play PUBG with your crush. What do you do?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "翘了！反正就一次！",
+            "zh-TW": "翘了！反正就一次！",
+            "en": "Skip it! Just this once!"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "干脆请个假吧。",
+            "zh-TW": "乾脆请个假吧。",
+            "en": "Just take official leave."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "都快考试了还去啥。",
+            "zh-TW": "都快考试了還去啥。",
+            "en": "Exams are coming, no way I'm going."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dim": "A2",
+      "text": {
+        "zh-CN": "我喜欢打破常规，不喜欢被束缚",
+        "zh-TW": "我喜歡打破常規，不喜歡被束缚",
+        "en": "I like breaking the rules and hate being constrained."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "保持中立",
+            "zh-TW": "保持中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dim": "A3",
+      "text": {
+        "zh-CN": "我做事通常有目标。",
+        "zh-TW": "我做事通常有目标。",
+        "en": "I usually have goals when I do things."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dim": "A3",
+      "text": {
+        "zh-CN": "突然某一天，我意识到人生哪有什么他妈的狗屁意义，人不过是和动物一样被各种欲望支配着，纯纯是被激素控制的东西，饿了就吃，困了就睡，一发情就想交配，我们简直和猪狗一样没什么区别。",
+        "zh-TW": "突然某一天，我意識到人生哪有什么他媽的狗屁意義，人不過是和動物一樣被各種欲望支配着，純純是被激素控制的东西，饿了就吃，困了就睡，一發情就想交配，我们简直和猪狗一樣沒什么區别。",
+        "en": "One day I realized that life has no damn meaning. Humans are just like animals, controlled by desires and hormones. Hungry? Eat. Tired? Sleep. Horny? Mate. We're basically no different from pigs or dogs."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "是这样的。",
+            "zh-TW": "是這樣的。",
+            "en": "That's true."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "也许是，也许不是。",
+            "zh-TW": "也許是，也許不是。",
+            "en": "Maybe yes, maybe no."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "这简直是胡扯",
+            "zh-TW": "這简直是胡扯",
+            "en": "This is total nonsense"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "dim": "Ac1",
+      "text": {
+        "zh-CN": "我做事主要为了取得成果和进步，而不是避免麻烦和风险。",
+        "zh-TW": "我做事主要為了取得成果和进步，而不是避免麻烦和风险。",
+        "en": "I do things mainly to achieve results and progress, not to avoid trouble or risk."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "dim": "Ac1",
+      "text": {
+        "zh-CN": "你因便秘坐在马桶上（已长达30分钟），拉不出很难受。此时你更像",
+        "zh-TW": "你因便秘坐在马桶上（已长达30分钟），拉不出很難受。此時你更像",
+        "en": "You've been sitting on the toilet for 30 minutes with constipation, struggling to go. In this moment, you're more like:"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "再坐三十分钟看看，说不定就有了。",
+            "zh-TW": "再坐三十分钟看看，說不定就有了。",
+            "en": "Sit for another 30 minutes, maybe it'll happen."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "用力拍打自己的屁股并说：\"死屁股，快拉啊！\"",
+            "zh-TW": "用力拍打自己的屁股并說：『死屁股，快拉啊！『",
+            "en": "Slap my butt hard and yell at it to cooperate."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "使用开塞露，快点拉出来才好。",
+            "zh-TW": "使用开塞露，快点拉出来才好。",
+            "en": "Use a laxative suppository to get it out fast."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "dim": "Ac2",
+      "text": {
+        "zh-CN": "我做决定比较果断，不喜欢犹豫",
+        "zh-TW": "我做決定比较果斷，不喜歡犹豫",
+        "en": "I make decisions decisively and don't like hesitating."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "dim": "Ac2",
+      "text": {
+        "zh-CN": "此题没有题目，请盲选",
+        "zh-TW": "此題沒有題目，请盲選",
+        "en": "This question has no prompt. Just pick blindly."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "反复思考后感觉应该选A？",
+            "zh-TW": "反复思考后感覺應该選A？",
+            "en": "After thinking it over, maybe A?"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "啊，要不选B？",
+            "zh-TW": "啊，要不選B？",
+            "en": "Uh, how about B?"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不会就选C？",
+            "zh-TW": "不會就選C？",
+            "en": "When in doubt, pick C?"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "dim": "Ac3",
+      "text": {
+        "zh-CN": "别人说你\"执行力强\"，你内心更接近哪句？",
+        "zh-TW": "别人說你『执行力强『，你内心更接近哪句？",
+        "en": "Someone says you have 'strong execution.' Which statement feels closer to your truth?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "我被逼到最后确实执行力超强。。。",
+            "zh-TW": "我被逼到最后確實执行力超强。。。",
+            "en": "I do execute well... when pushed to the deadline..."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "啊，有时候吧。",
+            "zh-TW": "啊，有時候吧。",
+            "en": "Uh, sometimes."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "是的，事情本来就该被推进",
+            "zh-TW": "是的，事情本来就该被推进",
+            "en": "Yes, things should naturally get pushed forward"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "dim": "Ac3",
+      "text": {
+        "zh-CN": "我做事常常有计划，____",
+        "zh-TW": "我做事常常有计划，____",
+        "en": "I often plan things out, ____"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "然而计划不如变化快。",
+            "zh-TW": "然而计划不如变化快。",
+            "en": "but plans change faster than I can keep up."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "有时能完成，有时不能。",
+            "zh-TW": "有時能完成，有時不能。",
+            "en": "sometimes I follow through, sometimes I don't."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "我讨厌被打破计划。",
+            "zh-TW": "我讨厌被打破计划。",
+            "en": "and I hate when my plans get disrupted."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "dim": "So1",
+      "text": {
+        "zh-CN": "你因玩《第五人格》（一款刺激的游戏）而结识许多网友，并被邀请线下见面，你的想法是？",
+        "zh-TW": "你因玩《第五人格》（一款刺激的游戏）而結識許多网友，并被邀请线下见面，你的想法是？",
+        "en": "You've made many online friends through playing Identity V, and they invite you to meet offline. What's your thought?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "网上口嗨下就算了，真见面还是有点忐忑。",
+            "zh-TW": "网上口嗨下就算了，真见面還是有点忐忑。",
+            "en": "Chatting online is fine, but meeting in person makes me nervous."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "见网友也挺好，反正谁来聊我就聊两句。",
+            "zh-TW": "见网友也挺好，反正谁来聊我就聊两句。",
+            "en": "Meeting online friends is cool. I'll chat with whoever shows up."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "我会打扮一番并热情聊天，万一呢，我是说万一呢？",
+            "zh-TW": "我會打扮一番并熱情聊天，万一呢，我是說万一呢？",
+            "en": "I'll dress up and chat enthusiastically. Who knows, right?"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "dim": "So1",
+      "text": {
+        "zh-CN": "朋友带了ta的朋友一起来玩，你最可能的状态是",
+        "zh-TW": "朋友帶了ta的朋友一起来玩，你最可能的状態是",
+        "en": "Your friend brings their friend along to hang out. You're most likely to:"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "对\"朋友的朋友\"天然有点距离感，怕影响二人关系",
+            "zh-TW": "對『朋友的朋友『天然有点距離感，怕影響二人關系",
+            "en": "Feel naturally distant, worried it'll affect the duo vibe"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "看对方，能玩就玩。",
+            "zh-TW": "看對方，能玩就玩。",
+            "en": "See how it goes. If we vibe, cool."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "朋友的朋友应该也算我的朋友！要热情聊天",
+            "zh-TW": "朋友的朋友應该也算我的朋友！要熱情聊天",
+            "en": "Friend of a friend is my friend too! Gotta chat warmly"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "dim": "So2",
+      "text": {
+        "zh-CN": "我和人相处主打一个电子围栏，靠太近会自动报警。",
+        "zh-TW": "我和人相处主打一个电子围栏，靠太近會自動报警。",
+        "en": "I interact with people like there's an invisible electric fence—get too close and alarms go off."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "dim": "So2",
+      "text": {
+        "zh-CN": "我渴望和我信任的人关系密切，熟得像失散多年的亲戚。",
+        "zh-TW": "我渴望和我信任的人關系密切，熟得像失散多年的亲戚。",
+        "en": "I crave close relationships with people I trust, like long-lost relatives reunited."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "dim": "So3",
+      "text": {
+        "zh-CN": "有时候你明明对一件事有不同的、负面的看法，但最后没说出来。多数情况下原因是：",
+        "zh-TW": "有時候你明明對一件事有不同的、负面的看法，但最后沒說出来。多数情况下原因是：",
+        "en": "Sometimes you clearly have a different, negative opinion about something, but you don't say it. Most of the time, it's because:"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "这种情况较少。",
+            "zh-TW": "這種情况较少。",
+            "en": "This rarely happens."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "可能碍于情面或者关系。",
+            "zh-TW": "可能礙于情面或者關系。",
+            "en": "Probably to save face or maintain the relationship."
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "不想让别人知道自己是个阴暗的人。",
+            "zh-TW": "不想讓别人知道自己是个陰暗的人。",
+            "en": "Don't want others to know I'm this dark inside."
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "dim": "So3",
+      "text": {
+        "zh-CN": "我在不同人面前会表现出不一样的自己",
+        "zh-TW": "我在不同人面前會表現出不一樣的自己",
+        "en": "I show different versions of myself to different people."
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "不认同",
+            "zh-TW": "不認同",
+            "en": "Disagree"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "中立",
+            "zh-TW": "中立",
+            "en": "Neutral"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "认同",
+            "zh-TW": "認同",
+            "en": "Agree"
+          },
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "specialQuestions": [
+    {
+      "id": "drink_gate_q1",
+      "special": true,
+      "kind": "drink_gate",
+      "text": {
+        "zh-CN": "您平时有什么爱好？",
+        "zh-TW": "您平時有什么愛好？",
+        "en": "What are your usual hobbies?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "吃喝拉撒",
+            "zh-TW": "吃喝拉撒",
+            "en": "Eating, drinking, the usual"
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "艺术爱好",
+            "zh-TW": "藝术愛好",
+            "en": "Artistic pursuits"
+          },
+          "value": 2
+        },
+        {
+          "label": {
+            "zh-CN": "饮酒",
+            "zh-TW": "飲酒",
+            "en": "Drinking alcohol"
+          },
+          "value": 3
+        },
+        {
+          "label": {
+            "zh-CN": "健身",
+            "zh-TW": "健身",
+            "en": "Working out"
+          },
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "drink_gate_q2",
+      "special": true,
+      "kind": "drink_trigger",
+      "text": {
+        "zh-CN": "您对饮酒的态度是？",
+        "zh-TW": "您對飲酒的態度是？",
+        "en": "What's your attitude toward drinking?"
+      },
+      "options": [
+        {
+          "label": {
+            "zh-CN": "小酌怡情，喝不了太多。",
+            "zh-TW": "小酌怡情，喝不了太多。",
+            "en": "A little is fine, can't drink much."
+          },
+          "value": 1
+        },
+        {
+          "label": {
+            "zh-CN": "我习惯将白酒灌在保温杯，当白开水喝，酒精令我信服。",
+            "zh-TW": "我習慣将白酒灌在保溫杯，當白开水喝，酒精令我信服。",
+            "en": "I keep baijiu in my thermos and drink it like water. Alcohol rules."
+          },
+          "value": 2
+        }
+      ]
+    }
+  ]
+}

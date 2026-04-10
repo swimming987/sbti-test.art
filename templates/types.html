@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{typesPage.title}} | SBTI Test</title>
+  <meta name="description" content="{{typesPage.subtitle}}">
+  <meta name="keywords" content="{{siteKeywords}}">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/types">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/types">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/types">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/types">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/types">
+  <meta property="og:title" content="{{typesPage.title}}">
+  <meta property="og:description" content="{{typesPage.subtitle}}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{{> header}}
+<main class="types-page">
+  <div class="container">
+    <div class="section-header" style="padding-top:32px">
+      <h1 style="font-size:clamp(28px,5vw,42px)">{{typesPage.title}}</h1>
+      <p>{{typesPage.subtitle}}</p>
+    </div>
+    <div class="types-grid">
+      {{#each typesList}}
+      <a href="{{prefix}}/types/{{slug}}" class="card type-card">
+        <img class="type-card-image" src="/image/{{image}}" alt="{{code}}" loading="lazy">
+        <div class="type-card-code">{{code}}</div>
+        <div class="type-card-cn">{{cn}}</div>
+        <div class="type-card-intro">{{intro}}</div>
+      </a>
+      {{/each}}
+    </div>
+    <div class="text-center mt-8">
+      <a href="{{prefix}}/test" class="btn btn-primary btn-lg">{{hero.cta}}</a>
+    </div>
+  </div>
+</main>
+{{> footer}}
+<script src="/js/main.js"></script>
+</body>
+</html>

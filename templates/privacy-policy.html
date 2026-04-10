@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{legal.privacy.title}} | SBTI Test</title>
+  <meta name="description" content="{{legal.privacy.title}} - SBTI Test">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/privacy-policy">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/privacy-policy">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/privacy-policy">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/privacy-policy">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/privacy-policy">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{{> header}}
+<main class="content-page">
+  <div class="container">
+    <div class="content-card">
+      <h1>{{legal.privacy.title}}</h1>
+      <p class="updated">{{legal.lastUpdated}}</p>
+      {{#each legal.privacy.sections}}
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+      {{/each}}
+    </div>
+  </div>
+</main>
+{{> footer}}
+<script src="/js/main.js"></script>
+</body>
+</html>

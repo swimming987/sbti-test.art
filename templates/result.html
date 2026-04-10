@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{result.title}} | SBTI Test</title>
+  <meta name="description" content="{{siteDesc}}">
+  <link rel="canonical" href="{{siteUrl}}{{prefix}}/result">
+  <link rel="alternate" hreflang="zh-Hans" href="{{siteUrl}}/result">
+  <link rel="alternate" hreflang="en" href="{{siteUrl}}/en/result">
+  <link rel="alternate" hreflang="zh-Hant" href="{{siteUrl}}/zh-TW/result">
+  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/result">
+  <meta property="og:title" content="{{result.title}}">
+  <meta property="og:description" content="{{siteDesc}}">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{{> header}}
+<main class="result-page">
+  <div class="container">
+    <div class="result-card">
+      <div class="result-layout">
+        <div class="result-top">
+          <div class="poster-box" id="posterBox">
+            <img id="typeImg" class="poster-image" alt="" style="display:none">
+          </div>
+          <div class="type-box">
+            <div class="type-kicker" id="typeKicker">{{result.yourType}}</div>
+            <h2 class="type-name">
+              <span id="typeName"></span>
+              <span id="typeCode" style="opacity:0.7;font-size:0.8em"></span>
+            </h2>
+            <div class="match-badge" id="matchBadge"></div>
+            <div class="type-subname" id="typeSub"></div>
+            <div class="type-intro" id="typeIntro" style="margin-top:12px;color:var(--text-secondary)"></div>
+          </div>
+        </div>
+        <div class="analysis-box">
+          <h3>{{result.analysisTitle}}</h3>
+          <p id="analysisBox"></p>
+        </div>
+        <div class="dim-box">
+          <h3>{{result.dimTitle}}</h3>
+          <div id="dimensionList" class="dim-list"></div>
+        </div>
+        <div class="note-box">
+          <h3>{{result.noteTitle}}</h3>
+          <p id="funNote"></p>
+        </div>
+        <details class="author-box">
+          <summary data-expand="{{result.expand}}" data-collapse="{{result.collapse}}">{{result.authorTitle}}</summary>
+          <div class="author-content">
+            <p>{{result.authorP1}}</p>
+            <p>{{result.authorP2}}</p>
+            <p>{{result.authorP3}}</p>
+            <p>{{result.authorP4}}</p>
+          </div>
+        </details>
+      </div>
+      <div class="result-actions">
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="{{prefix}}/test" class="btn btn-secondary">{{result.restart}}</a>
+          <a href="{{prefix}}/" class="btn btn-secondary">{{result.backHome}}</a>
+          <button id="shareBtn" class="btn btn-primary">{{result.shareLink}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="toast" id="toast">{{result.shareCopied}}</div>
+{{> footer}}
+<script>
+  const SBTI_LANG = '{{langCode}}';
+  const SBTI_PREFIX = '{{prefix}}';
+  const SBTI_SITE_URL = '{{siteUrl}}';
+  const SBTI_I18N_RESULT = {
+    yourType: '{{result.yourType}}',
+    hiddenActivated: '{{result.hiddenActivated}}',
+    systemFallback: '{{result.systemFallback}}',
+    noteNormal: '{{result.noteNormal}}',
+    noteSpecial: '{{result.noteSpecial}}',
+    matchHigh: '{{result.matchHigh}}',
+    matchDrunk: '{{result.matchDrunk}}',
+    matchLow: '{{result.matchLow}}',
+    matchPercent: '{{result.matchPercent}}',
+    matchDrunkBadge: '{{result.matchDrunkBadge}}',
+    matchLowBadge: '{{result.matchLowBadge}}',
+    shareCopied: '{{result.shareCopied}}'
+  };
+  const SBTI_TYPES = {{typesJSON}};
+  const SBTI_IMAGES = {{imagesJSON}};
+  const SBTI_NORMAL = {{normalTypesJSON}};
+  const SBTI_DIM = {{dimensionsJSON}};
+</script>
+<script src="/js/result.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
