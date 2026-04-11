@@ -41,7 +41,7 @@ function findMatchingClose(template, openTag, closeTag, startPos) {
 
 function render(template, data) {
   // Handle partials {{> name}}
-  template = template.replace(/\{\{>\s*(\w+)\s*\}\}/g, (_, name) => {
+  template = template.replace(/\{\{>\s*([\w-]+)\s*\}\}/g, (_, name) => {
     const partialFile = path.join(TMPL, 'partials', `${name}.html`);
     if (fs.existsSync(partialFile)) return read(partialFile);
     return '';
